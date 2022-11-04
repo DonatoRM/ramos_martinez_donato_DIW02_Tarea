@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Accesibilidad Ejemplos Bien</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Accesibilidad%20Ejemplos%20bien_files/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1 tabindex="1">Accesibilidad Ejemplos bien</h1>
+    </header>
+    <nav>
+      <header>
+        <h2 tabindex="2">Elementos repetitivos - Ejemplo Bien</h2>
+      </header>
+      <ul>
+        <li>
+          <a href="#" aria-label="Menú 1" tabindex="3">menu 1</a>
+          <ul>
+            <li><a href="#" aria-label="sub menú 1.1" tabindex="4">submenu 1.1</a></li>
+            <li><a href="#" aria-label="sub menú 1.2" tabindex="5">submenu 1.2</a></li>
+            <li><a href="#" aria-label="sub menú 1.3" tabindex="6">submenu 1.3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" aria-label="Menú 2" tabindex="7">menu 2</a>
+          <ul>
+            <li><a href="#" aria-label="sub menú 2.1" tabindex="8">submenu 2.1</a></li>
+            <li><a href="#" aria-label="sub menú 2.2" tabindex="9">submenu 2.2</a></li>
+            <li><a href="#" aria-label="sub menú 2.3" tabindex="10">submenu 2.3</a></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+    </nav>
+    <main>
+      <section>
+        <header>
+          <h2 tabindex="11">Formularios - Ejemplo bien</h2>
+        </header>
+        <form method="post" action="#">
+          <fieldset>
+            <legend tabindex="12"><strong>Información personal</strong></legend>
+            <label for="idName">Nombre:</label>
+            <br />
+            <input type="text" id="idName" tabindex="13" placeholder="Tu nombre" />
+            <br />
+            <label for="idEmail">Correo Electrónico:</label>
+            <br />
+            <input type="email" id="idEmail" tabindex="14" placeholder="Tu correo personal" />
+            <br />
+            <label for="idUrl">Página personal:</label>
+            <br />
+            <input placeholder="URL de tu página web personal" type="url" id="idUrl" tabindex="15" />
+            <br />
+          </fieldset>
+          <fieldset>
+            <legend tabindex="16"><strong>Otra información</strong></legend>
+            <label for="idDate">Fecha:</label>
+            <br />
+            <input type="date" id="idDate" tabindex="17" />
+            <br />
+            <label for="idMonth">Mes:</label>
+            <br />
+            <input type="month" id="idMonth" tabindex="18" />
+            <br />
+            <label for="idWeek">Semana:</label>
+            <br />
+            <input type="week" id="idWeek" tabindex="19" />
+            <br />
+            <label for="idTime">Tiempo:</label>
+            <br />
+            <input type="time" id="idTime" tabindex="20" />
+            <br />
+            <label for="idDateAndTime">Fecha y tiempo:</label>
+            <br />
+            <input type="time" id="idDateAndTime" tabindex="21" />
+            <br />
+            <label for="idNumber">Número (min -10, max 10):</label>
+            <br />
+            <input
+              min="-10"
+              max="10"
+              value="0"
+              type="number"
+              id="idNumber"
+              aria-valuemin="-10"
+              aria-valuemax="10"
+              aria-valuenow="0"
+              tabindex="22"
+            />
+            <br />
+            <label for="idInterval">Intervalo (min 0, max 10):</label>
+            <br />
+            <input
+              value="50"
+              type="range"
+              id="idInterval"
+              role="slider"
+              aria-valuemax="10"
+              aria-valuemin="0"
+              aria-valuenow="50"
+              tabindex="23"
+            />
+            <br />
+            <label for="idPhone">Teléfono:</label>
+            <br />
+            <input type="tel" id="idPhone" tabindex="24" placeholder="Su número de teléfono" />
+            <br />
+            <label for="idSearch">Búsqueda:</label>
+            <br />
+            <input type="search" id="idSearch" tabindex="25" placeholder="inserte su búsqueda" />
+            <br />
+            <label for="idColour">Color Favorito:</label>
+            <br />
+            <input value="#000000" type="color" id="idColour" tabindex="26" />
+            <br />
+          </fieldset>
+          <fieldset>
+            <legend tabindex="27"><strong>Controles</strong></legend>
+            <input value="Borrar" type="reset" tabindex="28" />
+            <input value="Enviar" type="submit" tabindex="29" />
+          </fieldset>
+        </form>
+        <hr />
+      </section>
+      <aside>
+        <header>
+          <h2 tabindex="30">Imágenes - Ejemplo Bien</h2>
+        </header>
+        <p>
+          <a
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/anterior.html"
+            tabindex="31"
+            role="button"
+            aria-label="nos lleva a la página anterior"
+            ><img src="Accesibilidad%20Ejemplos%20bien_files/flecha-izq.gif" alt="nos lleva a la página anterior"
+          /></a>
+          <a
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/indice.html"
+            aria-label="nos lleva al índice"
+            tabindex="32"
+            >Índice</a
+          >
+          <a
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguiente.html"
+            tabindex="33"
+            role="button"
+            arial-label="nos lleva a la página siguiente"
+            ><img src="Accesibilidad%20Ejemplos%20bien_files/flecha-der.gif" alt="nos lleva a la página siguiente"
+          /></a>
+        </p>
+      </aside>
+      <aside>
+        <header>
+          <h2 tabindex="34">Menú:</h2>
+        </header>
+        <a
+          href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html"
+          aria-label="Únete a nosotros"
+          tabindex="35"
+          ><img src="Accesibilidad%20Ejemplos%20bien_files/logo.png" alt="" />Únete</a
+        >
+        <br />
+        <a
+          href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html"
+          aria_label="información sobre nuestro equipo"
+          tabindex="36"
+          ><img src="Accesibilidad%20Ejemplos%20bien_files/logo.png" alt="" />Equipo</a
+        >
+        <br />
+        <a
+          href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html"
+          aria_label="Contacta con nosotros"
+          tabindex="37"
+          ><img src="Accesibilidad%20Ejemplos%20bien_files/logo.png" alt="" />Contacto</a
+        >
+        <br />
+        <a
+          href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html"
+          aria_label="Síguenos en nuestras redes"
+          tabindex="38"
+          ><img src="Accesibilidad%20Ejemplos%20bien_files/logo.png" alt="" />Síguenos</a
+        >
+        <p>
+          <span>Teléfono de contacto:</span
+          ><img
+            src="Accesibilidad%20Ejemplos%20bien_files/telefono.gif"
+            alt="Teléfono de contacto 999123456"
+            tabindex="39"
+          />
+        </p>
+      </aside>
+      <section>
+        <header>
+          <h2>Mapas de imágenes - Ejemplo Bien</h2>
+        </header>
+
+        <img
+          src="Accesibilidad%20Ejemplos%20bien_files/img-map-area.png"
+          usemap="#map1"
+          height="480"
+          width="948"
+          alt=""
+          longdesc="#descripcionImagen"
+          tabindex="41"
+        />
+        <span id="descripcionImagen"
+          >Hackathon es un grupo creado por los amantes de hackathones. La idea del grupo es juntarse de vez en cuando para
+          realizar un hackathon entre todos los participantes. La intención es no discriminar ningún lenguaje de
+          programación, y que los hackathones sirvan para aprender nuevas herramientas y nuevos procedimientos, a la vez que
+          se afiancen lazos con otros profesionales</span
+        >
+        <map name="map1">
+          <area
+            shape="rect"
+            coords="18,25,221,63"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/index.html"
+            alt="Inicio"
+            role="button"
+            aria-label="inicio"
+            tabindex="44"
+            alt="Índice"
+          />
+          <area
+            shape="rect"
+            coords="337,40,396,64"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/unete.html"
+            alt="Unete"
+            role="button"
+            aria-label="únete"
+            tabindex="45"
+            alt="Únete"
+          />
+          <area
+            shape="rect"
+            coords="424,40,491,65"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/equipo.html"
+            alt="Equipo"
+            role="button"
+            aria-label="equipo"
+            tabindex="46"
+          />
+          <area
+            shape="rect"
+            coords="520,41,612,64"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/contacto.html"
+            alt="Contacto"
+            role="button"
+            aria-label="contacto"
+            tabindex="47"
+          />
+          <area
+            shape="rect"
+            coords="641,40,728,65"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/siguenos.html"
+            alt="Síguenos"
+            role="button"
+            aria-label="síguenos"
+            tabindex="48"
+          />
+          <area
+            shape="rect"
+            coords="16,344,400,397"
+            href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/meetup.html"
+            alt="Meetup"
+            role="button"
+            aria-label="Únete a nuestro Meetup"
+            tabindex="49"
+          />
+        </map>
+      </section>
+      <section>
+        <header>
+          <h2 tabindex="50">Enlace - Ejemplo bien</h2>
+        </header>
+        <article>
+          <header>
+            <h3 tabindex="51">A mi hija mayor se le ha caído su primer diente</h3>
+          </header>
+          <p tabindex="52">
+            Estábamos desayunando cuando de repente sucedió.
+            <a
+              tabindex="53"
+              href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html"
+              role="link"
+              aria-label="Más información sobre la noticia"
+              >Más información.</a
+            >
+          </p>
+        </article>
+        <article>
+          <header tabindex="54">
+            <h3 tabindex="55">A mi hija pequeña le ha salido su primera muela</h3>
+          </header>
+          <p tabindex="56">Después de comer, la pequeña dijo que le molestaba la boca.</p>
+          <a tabindex="57" href="https://asanzdiego.github.io/accesibilidad/ejemplo-mal/noticia-hija-mayor.html"
+            >Más información.</a
+          >
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2 tabindex="58">Organización - Ejemplo bien</h2>
+          <h3 tabindex="59">Nombre de la empresa</h3>
+        </header>
+        <article>
+          <header>
+            <h4>Noticia</h4>
+          </header>
+          <strong>Noticia 1</strong> Desarrollo de la noticia 1
+          <br />
+          <strong>Noticia 2</strong> Desarrollo de la noticia 2
+        </article>
+      </section>
+      <section>
+        <header>
+          <h2 tabindex="62">Diagramas - Ejemplo Bien</h2>
+        </header>
+        <img
+          src="Accesibilidad%20Ejemplos%20bien_files/disenio-centrado-usuario.png"
+          alt=""
+          tabindex="63"
+          longdesc="#descriptionDiagrama"
+        />
+        <span id="descriptionDiagrama"
+          >En el primer estado está la Planificación, que consiste en la identificación de requerimientos del proyecto. El
+          siguiente estado es cíclico, y se compone de 3 estados: Diseño, Prototipado y Evaluación. El estado de Diseño está
+          compuesto del Modelado del Usuario, del Diseño Conceptual, de Definir el Estilo, del Diseño Visual y del Diseño de
+          Contenidos. El estado de Prototipado está compuesto por el Low fidelity y el High fidelity. El estado de Evaluación
+          está compuesto por los Métodos de Inspección y los Métodos de Test. Del estado cíclico parten dos estados
+          consecutivos: Implementación y Lanzamiento, y Mantenimiento y Seguimiento.</span
+        >
+      </section>
+      <section>
+        <header>
+          <h2 tabindex="64">Tablas - Ejemplo Bien</h2>
+        </header>
+        <table id="horario">
+          <thead>
+            <tr>
+              <th scope="col" id="columnaHoras">Horas</th>
+              <th scope="col" id="columnaLunes">Lunes</th>
+              <th scope="col" id="columnaMartes">Martes</th>
+              <th scope="col" id="columnaMiercoles">Miércoles</th>
+              <th scope="col" id="columnaJueves">Jueves</th>
+              <th scope="col" id="columnaViernes">Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="fila10:00">10:00</th>
+              <td headers="columnaLunes fila10:00" tabindex="65">Matemáticas</td>
+              <td headers="columnaMartes fila10:00" tabindex="69">Matemáticas</td>
+              <td headers="columnaMiercoles fila10:00" tabindex="73">Matemáticas</td>
+              <td headers="columnaJueves fila10:00" tabindex="77">Matemáticas</td>
+              <td headers="columnaViernes fila10:00" tabindex="81">Matemáticas</td>
+            </tr>
+            <tr>
+              <th scope="row" id="fila11:00">11:00</th>
+              <td headers="columnaLunes fila11:00" tabindex="66">Lengua</td>
+              <td headers="columnaMartes fila11:00" tabindex="70">Lengua</td>
+              <td headers="columnaMiercoles fila11:00" tabindex="74">Lengua</td>
+              <td headers="columnaJueves fila11:00" tabindex="78">Lengua</td>
+              <td headers="columnaViernes fila11:00" tabindex="82">Lengua</td>
+            </tr>
+            <tr>
+              <th scope="row" id="fila12:00">12:00</th>
+              <td headers="columnaLunes fila12:00" tabindex="67">Sociales</td>
+              <td headers="columnaMartes fila12:00" tabindex="71">Naturales</td>
+              <td headers="columnaMiercoles fila12:00" tabindex="75">Sociales</td>
+              <td headers="columnaJueves fila12:00" tabindex="79">Naturales</td>
+              <td headers="columnaViernes fila12:00" tabindex="83">Deporte</td>
+            </tr>
+            <tr>
+              <th scope="row" id="fila13:00">13:00</th>
+              <td headers="columnaLunes fila13:00" tabindex="68">Inglés</td>
+              <td headers="columnaMartes fila13:00" tabindex="72">Inglés</td>
+              <td headers="columnaMiercoles fila13:00" tabindex="76">Inglés</td>
+              <td headers="columnaJueves fila13:00" tabindex="80">Inglés</td>
+              <td headers="columnaViernes fila13:00" tabindex="84">Música</td>
+            </tr>
+          </tbody>
+        </table>
+        <footer>
+          <p tabindex="85">En esta tabla puede verse el horario de la clase 3ºA</p>
+        </footer>
+      </section>
+      <section>
+        <header>
+          <h2 tabindex="86">Contraste - Ejemplo Bien</h2>
+        </header>
+        <div class="importante" tabindex="87">Este texto es importante</div>
+      </section>
+    </main>
+  </body>
+</html>
